@@ -1,7 +1,7 @@
 /* Base Styles */
         @font-face {
             font-family: 'OPTISpire';
-            src: url('./fonts/OPTISpire.otf') format('opentype');
+            src: url('https://projectloaf.com/fonts/OPTISpire.otf') format('opentype');
         }
 
 
