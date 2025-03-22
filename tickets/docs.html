@@ -40,10 +40,18 @@
   <!-- Header -->
   <header class="header">
     <nav class="nav-container">
-      <a href="#" class="nav-icon info-icon" id="info-icon">
-        <i class="fa-solid fa-circle-info"></i>
+      <div class="dropdown">
+        <a href="#" class="nav-icon features-icon" id="features-icon">
+          <i class="fa-solid fa-rocket"></i>
+        </a>
+        <div class="dropdown-content">
+          <a href="./tickets.html">Ticketsmaster</a>
+          <a href="../monster/monster.html">Monster</a>
+        </div>
+      </div>
+      <a href="https://projectloaf.com" class="nav-icon home-icon" id="home-icon">
+        <i class="fa-solid fa-house"></i>
       </a>
-      <div class="nav-logo" id="loaf-text">LOAF</div>
       <a href="#" class="nav-icon discord-icon" id="discord-icon">
         <i class="fa-brands fa-discord"></i>
       </a>
@@ -55,6 +63,12 @@
     <div class="hero-section">
       <h1 class="hero-title">Ticketsmaster Documentation</h1>
       <p class="hero-description">Simple, easy to understand, breakdown of each command</p>
+      <div class="card-button-container" style="margin-top: 1rem;">
+        <a href="https://discord.com/oauth2/authorize?client_id=1333249924485222442&permissions=8&integration_type=0&scope=bot" class="card-button" style="width: auto; padding: 0.75rem 1.5rem;">
+          <i class="fab fa-discord" style="margin-right: 8px;"></i>
+          <span>Add to Discord</span>
+        </a>
+      </div>
     </div>
 
     <!-- Commands Grid -->

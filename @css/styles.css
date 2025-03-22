@@ -42,26 +42,33 @@ body {
 
 .nav-container {
     display: flex;
-    align-items: center;
     justify-content: center;
-    padding: 0.75rem 1.5rem;
-    background-color: rgba(26, 26, 32, 0.4);
-    backdrop-filter: blur(12px);
-    border-radius: 9999px;
-    transition: all 0.3s ease;
-}
-
-.nav-container:hover {
-    background-color: rgba(26, 26, 32, 0.6);
-    transform: translateY(-1px);
-    box-shadow: 0 4px 15px rgba(59, 81, 227, 0.15);
+    align-items: center;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 0.75rem 2rem;
+    background: rgba(32, 34, 37, 0.7);
+    border-radius: 100px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .nav-icon {
-    color: var(--text);
+    color: #fff;
     text-decoration: none;
-    font-size: 1rem;
-    transition: all 0.2s ease;
+    transition: all 0.3s ease;
+    font-size: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    position: relative;
+}
+
+/* Create tight fixed spacing between icons */
+.nav-icon:not(:last-child),
+.dropdown:not(:last-child) {
+    margin-right: 2rem;
 }
 
 .info-icon { margin-right: 1.5rem; }
@@ -263,7 +270,6 @@ body {
 
 /* Smooth transition for all interactive elements */
 .nav-container,
-.nav-icon,
 .nav-logo,
 .card-title,
 .card-description,
@@ -272,11 +278,6 @@ body {
 }
 
 /* Add hover state transitions */
-.nav-icon:hover {
-    transform: scale(1.1);
-    color: var(--primary);
-}
-
 .nav-logo:hover {
     transform: scale(1.05);
     text-shadow: 0 0 15px rgba(59, 81, 227, 0.6);
@@ -358,4 +359,88 @@ body {
         padding: 0 1rem;
         grid-template-columns: 1fr;
     }
-} 
+}
+
+/* Add to your existing styles */
+.hero-section .card-button {
+    width: auto;
+    padding: 0.75rem 1.5rem;
+    min-width: 160px;
+    margin: 0 auto;
+}
+
+/* Add these styles for the dropdown */
+.dropdown {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+/* Add padding to create hover buffer zone */
+.dropdown::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 20px; /* Buffer zone to maintain hover */
+}
+
+/* Update dropdown content positioning */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: calc(100% + 20px); /* Adjusted to account for buffer zone */
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(32, 34, 37, 0.95);
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 1000;
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 0.5rem 0;
+}
+
+.dropdown-content a {
+    color: #fff;
+    padding: 0.75rem 1rem;
+    text-decoration: none;
+    display: block;
+    transition: all 0.2s ease;
+    font-size: 0.9rem;
+}
+
+.dropdown-content a:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+    animation: fadeIn 0.2s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateX(-50%) translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+    }
+}
+
+/* Update existing nav-icon styles */
+.features-icon:hover {
+    color: #7289da;
+    transform: scale(1.1);
+}
+
+/* Add home icon hover effect */
+.home-icon:hover {
+    color: #7289da;
+    transform: scale(1.1);
+}
