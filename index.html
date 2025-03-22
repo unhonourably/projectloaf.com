@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>Project Loaf</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="@css/styles.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav-container">
+            <a href="#" class="nav-icon info-icon" id="info-icon">
+                <i class="fa-solid fa-circle-info"></i>
+            </a>
+            <div class="nav-logo" id="loaf-text">LOAF</div>
+            <a href="#" class="nav-icon discord-icon" id="discord-icon">
+                <i class="fa-brands fa-discord"></i>
+            </a>
+        </nav>
+    </header>
+
+    <main class="main-container">
+        <div class="hero-section">
+            <h1 class="hero-title">Project Loaf</h1>
+            <p class="hero-description">Empowering Discord communities with innovative solutions and seamless integrations.</p>
+        </div>
+
+        <section class="cards-grid">
+      <!-- Monster Card -->
+            <div class="card" data-scroll-index="0">
+                <div class="card-content">
+                    <div class="card-image-container">
+                        <img src="https://bue.lol/testing/monsterbot.png" alt="Monster Bot" class="card-image">
+            </div>
+                    <h2 class="card-title">Monster</h2>
+                    <p class="card-description">Advanced multipurpose Discord bot with powerful moderation and automation features.</p>
+                    <a href="monster/index.html" class="card-button">
+            <span>Learn More</span>
+                        <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Ticketsmaster Card -->
+            <div class="card" data-scroll-index="1">
+                <div class="card-content">
+                    <div class="card-image-container">
+                        <img src="https://bue.lol/testing/ticketmasterbot.png" alt="Ticketsmaster" class="card-image">
+            </div>
+                    <h2 class="card-title">Ticketsmaster</h2>
+                    <p class="card-description">Streamlined ticket management system for Discord communities.</p>
+                    <a href="tickets/tickets.html" class="card-button">
+            <span>View System</span>
+                        <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Project Loaf Card -->
+            <div class="card" data-scroll-index="2">
+                <div class="card-content">
+                    <div class="card-image-container">
+                        <img src="https://bue.lol/testing/loafserver.png" alt="Project Loaf" class="card-image">
+            </div>
+                    <h2 class="card-title">Project Loaf</h2>
+                    <p class="card-description">The next generation of Discord community management.</p>
+                    <div class="card-button coming-soon">
+                        <span>Coming Soon</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    </main>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Add initial hidden states
+        const hero = document.querySelector('.hero-section');
+        const cards = document.querySelectorAll('.card');
+        
+        hero.classList.add('fade-in-up');
+        
+        // Animate cards with delay
+        cards.forEach((card, index) => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(40px)';
+                        
+                        setTimeout(() => {
+                card.classList.add('fade-in-up');
+            }, 400 + (index * 200)); // Stagger the card animations
+            });
+          });
+    </script>
+</body>
+</html>

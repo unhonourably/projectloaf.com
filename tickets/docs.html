@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <title>Ticketsmaster Documentation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="../@css/styles.css">
+  <link rel="icon" href="https://bue.lol/tickets/assets/tablogo.png" type="image/png">
+  <link rel="icon" href="https://bue.lol/tickets/assets/tablogo.ico" type="image/x-icon">
+</head>
+<body>
+  <!-- Background Stars -->
+  <div class="stars-container">
+    <!-- Animated stars -->
+    <div class="star" style="top: 15%; left: 10%;"></div>
+    <div class="star" style="top: 25%; left: 45%;"></div>
+    <div class="star" style="top: 35%; left: 80%;"></div>
+    <div class="star" style="top: 50%; left: 20%;"></div>
+    <div class="star" style="top: 65%; left: 60%;"></div>
+    <div class="star" style="top: 75%; left: 30%;"></div>
+    <div class="star" style="top: 85%; left: 90%;"></div>
+    
+    <!-- Static dim stars -->
+    <div class="star-dim" style="top: 10%; left: 25%;"></div>
+    <div class="star-dim" style="top: 20%; left: 65%;"></div>
+    <div class="star-dim" style="top: 40%; left: 35%;"></div>
+    <div class="star-dim" style="top: 55%; left: 75%;"></div>
+    <div class="star-dim" style="top: 70%; left: 15%;"></div>
+    <div class="star-dim" style="top: 80%; left: 50%;"></div>
+    <div class="star-dim" style="top: 90%; left: 85%;"></div>
+    <div class="star-dim" style="top: 15%; left: 95%;"></div>
+    <div class="star-dim" style="top: 45%; left: 5%;"></div>
+    <div class="star-dim" style="top: 60%; left: 40%;"></div>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <nav class="nav-container">
+      <a href="#" class="nav-icon info-icon" id="info-icon">
+        <i class="fa-solid fa-circle-info"></i>
+      </a>
+      <div class="nav-logo" id="loaf-text">LOAF</div>
+      <a href="#" class="nav-icon discord-icon" id="discord-icon">
+        <i class="fa-brands fa-discord"></i>
+      </a>
+    </nav>
+  </header>
+
+  <main class="main-container">
+    <!-- Hero Section -->
+    <div class="hero-section">
+      <h1 class="hero-title">Ticketsmaster Documentation</h1>
+      <p class="hero-description">Simple, easy to understand, breakdown of each command</p>
+    </div>
+
+    <!-- Commands Grid -->
+    <section class="cards-grid docs-grid">
+      <!-- Command Cards -->
+      <div class="card docs-card" data-scroll-index="0">
+        <div class="card-content">
+          <h2 class="card-title">quicksetup</h2>
+          <p class="card-description">Quickly sets up the bot with default settings and creates three different panels. Ban Appeals, Reports, and Questions.</p>
+        </div>
+      </div>
+
+      <div class="card docs-card" data-scroll-index="1">
+        <div class="card-content">
+          <h2 class="card-title">help</h2>
+          <p class="card-description">Displays help information about the bot.</p>
+        </div>
+      </div>
+
+      <div class="card docs-card" data-scroll-index="2">
+        <div class="card-content">
+          <h2 class="card-title">close &lt;reason&gt;</h2>
+          <p class="card-description">Closes the current ticket.</p>
+        </div>
+      </div>
+
+      <div class="card docs-card" data-scroll-index="3">
+        <div class="card-content">
+          <h2 class="card-title">closeolderthan &lt;time in m/h/d/w&gt;</h2>
+          <p class="card-description">Closes all tickets that are older than the specified time. Time can be specified in minutes (m), hours (h), days (d), or weeks (w).</p>
+        </div>
+      </div>
+
+      <div class="card docs-card" data-scroll-index="4">
+        <div class="card-content">
+          <h2 class="card-title">panelcreate --title &lt;title for embed&gt; --description &lt;description of embed&gt;</h2>
+          <p class="card-description">Creates a ticket panel with a custom name for users to click and create tickets.</p>
+        </div>
+      </div>
+
+      <div class="card docs-card" data-scroll-index="5">
+        <div class="card-content">
+          <h2 class="card-title">multipanelcreate --title &lt;title for embed&gt; --description &lt;description of embed&gt; --button1 &lt;button1 name&gt; --button2 &lt;button2 name&gt; --button3 &lt;button3 name&gt;</h2>
+          <p class="card-description">Creates a ticket panel with multiple buttons for different ticket types.</p>
+        </div>
+      </div>
+
+      <div class="card docs-card" data-scroll-index="6">
+        <div class="card-content">
+          <h2 class="card-title">viewtranscripts &lt;@mention/username/UserID&gt;</h2>
+          <p class="card-description">Displays the transcripts of a user's tickets. (sent in DMs)</p>
+        </div>
+      </div>
+
+      <div class="card docs-card" data-scroll-index="7">
+        <div class="card-content">
+          <h2 class="card-title">dmtranscript &lt;on/off/config&gt;</h2>
+          <p class="card-description">Controls whether users receive a transcript in their DMs when a ticket is closed.</p>
+        </div>
+      </div>
+
+      <div class="card docs-card" data-scroll-index="8">
+        <div class="card-content">
+          <h2 class="card-title">addstaff &lt;roleName&gt;</h2>
+          <p class="card-description">Adds a staff role to be able to view and manage tickets.</p>
+        </div>
+      </div>
+
+      <div class="card docs-card" data-scroll-index="9">
+        <div class="card-content">
+          <h2 class="card-title">removestaff &lt;roleName&gt;</h2>
+          <p class="card-description">Removes a staff role from managing tickets.</p>
+        </div>
+      </div>
+
+      <div class="card docs-card" data-scroll-index="10">
+        <div class="card-content">
+          <h2 class="card-title">viewstaff</h2>
+          <p class="card-description">View what roles are designated as staff.</p>
+        </div>
+      </div>
+
+      <div class="card docs-card" data-scroll-index="11">
+        <div class="card-content">
+          <h2 class="card-title">addadmin &lt;@mention/username/UserID&gt;</h2>
+          <p class="card-description">Adds a user as a Tickets Admin.</p>
+        </div>
+      </div>
+
+      <div class="card docs-card" data-scroll-index="12">
+        <div class="card-content">
+          <h2 class="card-title">removeadmin &lt;@mention/username/UserID&gt;</h2>
+          <p class="card-description">Removes a user as a Tickets Admin.</p>
+        </div>
+      </div>
+
+      <div class="card docs-card" data-scroll-index="13">
+        <div class="card-content">
+          <h2 class="card-title">viewadmins</h2>
+          <p class="card-description">View all the ticket admins.</p>
+        </div>
+      </div>
+
+      <div class="card docs-card" data-scroll-index="14">
+        <div class="card-content">
+          <h2 class="card-title">blacklist &lt;@mention/username/UserID&gt;</h2>
+          <p class="card-description">Blacklists a user from being able to create tickets.</p>
+        </div>
+      </div>
+
+      <div class="card docs-card" data-scroll-index="15">
+        <div class="card-content">
+          <h2 class="card-title">tempblacklist &lt;s/m/d/h/w&gt;</h2>
+          <p class="card-description">Temporarily blacklists a user from creating tickets for the specified duration.</p>
+        </div>
+      </div>
+
+      <div class="card docs-card" data-scroll-index="16">
+        <div class="card-content">
+          <h2 class="card-title">unblacklist &lt;@mention/username/UserID&gt;</h2>
+          <p class="card-description">Unblacklists a previously blacklisted user.</p>
+        </div>
+      </div>
+
+      <div class="card docs-card" data-scroll-index="17">
+        <div class="card-content">
+          <h2 class="card-title">viewblacklist</h2>
+          <p class="card-description">View the list of blacklisted users.</p>
+        </div>
+      </div>
+
+      <div class="card docs-card" data-scroll-index="18">
+        <div class="card-content">
+          <h2 class="card-title">autoclose help</h2>
+          <p class="card-description">Displays help information about autoclose commands.</p>
+        </div>
+      </div>
+
+      <div class="card docs-card" data-scroll-index="19">
+        <div class="card-content">
+          <h2 class="card-title">inactivepurge &lt;h/d/w&gt;</h2>
+          <p class="card-description">Automatically purges tickets that have been inactive for the specified time.</p>
+        </div>
+      </div>
+
+      <div class="card docs-card" data-scroll-index="20">
+        <div class="card-content">
+          <h2 class="card-title">clearblacklist</h2>
+          <p class="card-description">Clears all users from the blacklist.</p>
+        </div>
+      </div>
+
+      <div class="card docs-card" data-scroll-index="21">
+        <div class="card-content">
+          <h2 class="card-title">ban &lt;@mention/username/userId&gt;</h2>
+          <p class="card-description">Bans a user from the server.</p>
+        </div>
+      </div>
+
+      <div class="card docs-card" data-scroll-index="22">
+        <div class="card-content">
+          <h2 class="card-title">unban &lt;@mention/username/userId&gt;</h2>
+          <p class="card-description">Unbans a user from the server.</p>
+        </div>
+      </div>
+
+      <div class="card docs-card" data-scroll-index="23">
+        <div class="card-content">
+          <h2 class="card-title">kick &lt;@mention/username/userId&gt;</h2>
+          <p class="card-description">Kicks a user from the server.</p>
+        </div>
+      </div>
+
+      <div class="card docs-card" data-scroll-index="24">
+        <div class="card-content">
+          <h2 class="card-title">timeout &lt;@mention/username/userId&gt; &lt;duration in s, m, d, w&gt; &lt;reason&gt;</h2>
+          <p class="card-description">Times out a user for a specified duration.</p>
+        </div>
+      </div>
+
+      <div class="card docs-card" data-scroll-index="25">
+        <div class="card-content">
+          <h2 class="card-title">untimeout &lt;@mention/username/userId&gt;</h2>
+          <p class="card-description">Removes a user's timeout.</p>
+        </div>
+      </div>
+
+      <div class="card docs-card" data-scroll-index="26">
+        <div class="card-content">
+          <h2 class="card-title">nickname &lt;@mention/username/userId&gt; &lt;newNickname&gt;</h2>
+          <p class="card-description">Change the specified member's nickname.</p>
+        </div>
+      </div>
+
+      <div class="card docs-card" data-scroll-index="27">
+        <div class="card-content">
+          <h2 class="card-title">botclear</h2>
+          <p class="card-description">Clears all bot messages and messages starting with the set prefix.</p>
+        </div>
+      </div>
+
+      <div class="card docs-card" data-scroll-index="28">
+        <div class="card-content">
+          <h2 class="card-title">purge &lt;amount&gt;</h2>
+          <p class="card-description">Clears the specified amount of messages.</p>
+        </div>
+      </div>
+
+      <div class="card docs-card" data-scroll-index="29">
+        <div class="card-content">
+          <h2 class="card-title">note add &lt;noteContent&gt;</h2>
+          <p class="card-description">Add a note to a user.</p>
+        </div>
+      </div>
+
+      <div class="card docs-card" data-scroll-index="30">
+        <div class="card-content">
+          <h2 class="card-title">note remove &lt;@mention/username/UserId&gt;</h2>
+          <p class="card-description">Remove a note from a user.</p>
+        </div>
+      </div>
+
+      <div class="card docs-card" data-scroll-index="31">
+        <div class="card-content">
+          <h2 class="card-title">note clearall &lt;@mention/username/UserId&gt;</h2>
+          <p class="card-description">Clear all notes for a user.</p>
+        </div>
+      </div>
+
+      <div class="card docs-card" data-scroll-index="32">
+        <div class="card-content">
+          <h2 class="card-title">notes &lt;@mention/username/UserId&gt;</h2>
+          <p class="card-description">View all notes for a user.</p>
+        </div>
+      </div>
+
+      <div class="card docs-card" data-scroll-index="33">
+        <div class="card-content">
+          <h2 class="card-title">role &lt;@mention/username/UserId&gt; &lt;roleName&gt;</h2>
+          <p class="card-description">Add/remove roles to/from a user.</p>
+        </div>
+      </div>
+
+      <div class="card docs-card" data-scroll-index="34">
+        <div class="card-content">
+          <h2 class="card-title">roles</h2>
+          <p class="card-description">View an embed of server roles.</p>
+        </div>
+      </div>
+
+      <div class="card docs-card" data-scroll-index="35">
+        <div class="card-content">
+          <h2 class="card-title">prefix set &lt;newPrefix&gt;</h2>
+          <p class="card-description">Changes the bot's prefix.</p>
+        </div>
+      </div>
+
+      <div class="card docs-card" data-scroll-index="36">
+        <div class="card-content">
+          <h2 class="card-title">alias add &lt;alias&gt; &lt;commandName&gt;</h2>
+          <p class="card-description">Add a custom alias for any command.</p>
+        </div>
+      </div>
+
+      <div class="card docs-card" data-scroll-index="37">
+        <div class="card-content">
+          <h2 class="card-title">alias remove &lt;alias&gt;</h2>
+          <p class="card-description">Remove a command's alias.</p>
+        </div>
+      </div>
+
+      <div class="card docs-card" data-scroll-index="38">
+        <div class="card-content">
+          <h2 class="card-title">alias list</h2>
+          <p class="card-description">List all active aliases in the server.</p>
+        </div>
+      </div>
+
+      <div class="card docs-card" data-scroll-index="39">
+        <div class="card-content">
+          <h2 class="card-title">settranscriptschannel #channel</h2>
+          <p class="card-description">Sets the channel where ticket transcripts will be sent.</p>
+        </div>
+      </div>
+
+      <div class="card docs-card" data-scroll-index="40">
+        <div class="card-content">
+          <h2 class="card-title">addtoteam --teamname --rolename</h2>
+          <p class="card-description">Adds a role to a support team.</p>
+        </div>
+      </div>
+
+      <div class="card docs-card" data-scroll-index="41">
+        <div class="card-content">
+          <h2 class="card-title">removefromteam --teamname --rolename</h2>
+          <p class="card-description">Removes a role from a support team.</p>
+        </div>
+      </div>
+
+      <div class="card docs-card" data-scroll-index="42">
+        <div class="card-content">
+          <h2 class="card-title">assignteam --team &lt;teamname&gt;</h2>
+          <p class="card-description">Assigns a support team to the category. MUST be run in a ticket channel.</p>
+        </div>
+      </div>
+
+      <div class="card docs-card" data-scroll-index="43">
+        <div class="card-content">
+          <h2 class="card-title">unassignteam --team &lt;teamname&gt;</h2>
+          <p class="card-description">Removes the assigned support team from the category. MUST be run in a ticket channel.</p>
+        </div>
+      </div>
+
+      <div class="card docs-card" data-scroll-index="44">
+        <div class="card-content">
+          <h2 class="card-title">createsupportteam &lt;teamname&gt;</h2>
+          <p class="card-description">Creates a new support team.</p>
+        </div>
+      </div>
+
+      <div class="card docs-card" data-scroll-index="45">
+        <div class="card-content">
+          <h2 class="card-title">deletesupportteam &lt;teamname&gt;</h2>
+          <p class="card-description">Deletes an existing support team.</p>
+        </div>
+      </div>
+
+      <div class="card docs-card" data-scroll-index="46">
+        <div class="card-content">
+          <h2 class="card-title">supportping --team &lt;teamname&gt; --enable/disable</h2>
+          <p class="card-description">Enable or disable pinging for a support team.</p>
+        </div>
+      </div>
+
+      <div class="card docs-card" data-scroll-index="47">
+        <div class="card-content">
+          <h2 class="card-title">viewsupportteams</h2>
+          <p class="card-description">Displays a list of all support teams and their members.</p>
+        </div>
+      </div>
+
+      <div class="card docs-card" data-scroll-index="48">
+        <div class="card-content">
+          <h2 class="card-title">supportteamhelp</h2>
+          <p class="card-description">Displays help information about support team commands.</p>
+        </div>
+      </div>
+
+      <div class="card docs-card" data-scroll-index="49">
+        <div class="card-content">
+          <h2 class="card-title">autoclose inactivity enable/disable</h2>
+          <p class="card-description">Enable or disable automatic ticket closing due to inactivity.</p>
+        </div>
+      </div>
+
+      <div class="card docs-card" data-scroll-index="50">
+        <div class="card-content">
+          <h2 class="card-title">autoclose inactivity on &lt;time in s/m/d/h/w&gt;</h2>
+          <p class="card-description">Set the duration of inactivity before a ticket is automatically closed.</p>
+        </div>
+      </div>
+
+      <div class="card docs-card" data-scroll-index="51">
+        <div class="card-content">
+          <h2 class="card-title">autoclose config</h2>
+          <p class="card-description">View current autoclose configuration settings.</p>
+        </div>
+      </div>
+
+      <div class="card docs-card" data-scroll-index="52">
+        <div class="card-content">
+          <h2 class="card-title">autoclose onmemberleave enable/disable</h2>
+          <p class="card-description">Enable or disable automatic ticket closing when a member leaves the server.</p>
+        </div>
+      </div>
+
+      <div class="card docs-card" data-scroll-index="53">
+        <div class="card-content">
+          <h2 class="card-title">addtempviewer &lt;@mention/username/UserID&gt;</h2>
+          <p class="card-description">Temporarily adds a user as a viewer to the current ticket.</p>
+        </div>
+      </div>
+
+      <div class="card docs-card" data-scroll-index="54">
+        <div class="card-content">
+          <h2 class="card-title">claim</h2>
+          <p class="card-description">Claims the current ticket for yourself.</p>
+        </div>
+      </div>
+
+      <div class="card docs-card" data-scroll-index="55">
+        <div class="card-content">
+          <h2 class="card-title">claimcount</h2>
+          <p class="card-description">Shows how many tickets you have claimed.</p>
+        </div>
+      </div>
+
+      <div class="card docs-card" data-scroll-index="56">
+        <div class="card-content">
+          <h2 class="card-title">claimleaderboard</h2>
+          <p class="card-description">Displays a leaderboard of staff members and their claimed tickets.</p>
+        </div>
+      </div>
+
+      <div class="card docs-card" data-scroll-index="57">
+        <div class="card-content">
+          <h2 class="card-title">unclaim</h2>
+          <p class="card-description">Unclaims a previously claimed ticket.</p>
+        </div>
+      </div>
+
+      <div class="card docs-card" data-scroll-index="58">
+        <div class="card-content">
+          <h2 class="card-title">add &lt;@mention/username/UserID&gt;</h2>
+          <p class="card-description">Adds a user to the current ticket.</p>
+        </div>
+      </div>
+
+      <div class="card docs-card" data-scroll-index="59">
+        <div class="card-content">
+          <h2 class="card-title">remove &lt;@mention/username/UserID&gt;</h2>
+          <p class="card-description">Removes a user from the current ticket.</p>
+        </div>
+      </div>
+
+      <div class="card docs-card" data-scroll-index="60">
+        <div class="card-content">
+          <h2 class="card-title">deletearchive</h2>
+          <p class="card-description">Deletes an archive from the server.</p>
+        </div>
+      </div>
+
+      <div class="card docs-card" data-scroll-index="61">
+        <div class="card-content">
+          <h2 class="card-title">gettranscript</h2>
+          <p class="card-description">Gets the transcript of the current ticket.</p>
+        </div>
+      </div>
+
+      <div class="card docs-card" data-scroll-index="62">
+        <div class="card-content">
+          <h2 class="card-title">addviewer &lt;@mention/username/UserID&gt;</h2>
+          <p class="card-description">Adds a role as a viewer to all tickets following.</p>
+        </div>
+      </div>
+
+      <div class="card docs-card" data-scroll-index="63">
+        <div class="card-content">
+          <h2 class="card-title">removeviewer &lt;@mention/username/UserID&gt;</h2>
+          <p class="card-description">Removes a role as a viewer for all tickets.</p>
+        </div>
+      </div>
+
+      <div class="card docs-card" data-scroll-index="64">
+        <div class="card-content">
+          <h2 class="card-title">staffactivity</h2>
+          <p class="card-description">Shows the activity of staff members in tickets.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call-to-Action Section -->
+    <section class="hero-section">
+      <h2 class="hero-title">Ready to get started?</h2>
+      <p class="hero-description">Setup in just 2 minutes or less</p>
+      <div class="card-button-container">
+        <a href="https://discord.com/oauth2/authorize?client_id=1333249924485222442&permissions=8&integration_type=0&scope=bot" class="card-button">
+          <span>Invite the Bot</span>
+        </a>
+        <a href="#" class="card-button">
+          <span>Join Support Server</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="py-6 md:py-8 px-4">
+    <div class="container mx-auto text-center fade-up">
+      <div class="flex flex-wrap justify-center gap-3 sm:gap-4 md:gap-8 mb-4 md:mb-6">
+        <a href="https://ticketsmaster.xyz" class="text-xs sm:text-sm md:text-base text-gray-400 hover:text-blue-400 transition-colors">Home</a>
+        <a href="https://ticketsmaster.xyz/#features" class="text-xs sm:text-sm md:text-base text-gray-400 hover:text-blue-400 transition-colors">Features</a>
+        <a href="./index.html" class="text-xs sm:text-sm md:text-base text-gray-400 hover:text-blue-400 transition-colors">Documentation</a>
+        <a href="#" class="text-xs sm:text-sm md:text-base text-gray-400 hover:text-blue-400 transition-colors">Dashboard</a>
+        <a href="#" class="text-xs sm:text-sm md:text-base text-gray-400 hover:text-blue-400 transition-colors">Support</a>
+      </div>
+      <p class="text-xs sm:text-sm text-gray-500">bot made by <span class="text-gray-300">kuro</span>, website made with love by <span class="text-gray-300">bue</span> 🤍</p>
+    </div>
+  </footer>
+
+  <!-- Scroll Animation Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const hero = document.querySelector('.hero-section');
+      const cards = document.querySelectorAll('.card');
+      
+      hero.classList.add('fade-in-up');
+      
+      cards.forEach((card, index) => {
+        card.style.opacity = '0';
+        card.style.transform = 'translateY(40px)';
+        
+        setTimeout(() => {
+          card.classList.add('fade-in-up');
+        }, 400 + (index * 200));
+      });
+    });
+  </script>
+</body>
+</html>

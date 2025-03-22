@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>Ticketsmaster</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../@css/styles.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav-container">
+            <a href="#" class="nav-icon info-icon" id="info-icon">
+                <i class="fa-solid fa-circle-info"></i>
+            </a>
+            <div class="nav-logo" id="loaf-text">LOAF</div>
+            <a href="#" class="nav-icon discord-icon" id="discord-icon">
+                <i class="fa-brands fa-discord"></i>
+            </a>
+        </nav>
+    </header>
+
+    <main class="main-container">
+        <div class="hero-section">
+            <div class="card-image-container" style="max-width: 500px; margin: 0 auto 2rem;">
+                <img src="https://bue.lol/testing/ticketmasterbot.png" alt="Ticketsmaster" class="card-image" style="border-radius: 12px; box-shadow: 0 0 20px rgba(59,130,246,0.15);">
+            </div>
+            <h1 class="hero-title">Ticketsmaster</h1>
+            <p class="hero-description">Simple, customizable, and powerful Discord ticket system.</p>
+            <p class="hero-description">Get up and running in under 30 seconds.</p>
+            <div style="display: flex; gap: 1rem; justify-content: center; margin-top: 1.5rem;">
+                <a href="https://discord.com/oauth2/authorize?client_id=1333249924485222442&permissions=8&integration_type=0&scope=bot" 
+                   style="display: inline-flex; align-items: center; background: #5865F2; color: white; text-decoration: none; padding: 8px 16px; border-radius: 8px; font-size: 14px; transition: opacity 0.2s;">
+                    <i class="fab fa-discord" style="margin-right: 8px;"></i>
+                    <span>Add to Discord</span>
+                </a>
+                <a href="./docs.html" 
+                   style="display: inline-flex; align-items: center; background: rgba(30, 41, 59, 0.5); color: white; text-decoration: none; padding: 8px 16px; border-radius: 8px; font-size: 14px; transition: opacity 0.2s;">
+                    <i class="fas fa-book" style="margin-right: 8px;"></i>
+                    <span>Documentation</span>
+                </a>
+            </div>
+        </div>
+
+        <section class="cards-grid">
+            <!-- Dashboard Card -->
+            <div class="card" data-scroll-index="0">
+                <div class="card-content">
+                    <h2 class="card-title">Dashboard</h2>
+                    <p class="card-description">Interactive Dashboard for the best Ticketsmaster experience.</p>
+                    <div class="card-button coming-soon">
+                        <span>Coming Soon</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Forms Card -->
+            <div class="card" data-scroll-index="1">
+                <div class="card-content">
+                    <h2 class="card-title">Forms</h2>
+                    <p class="card-description">Set questions to be answered before ticket creation.</p>
+                    <div class="card-button coming-soon">
+                        <span>Coming Soon</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- User Feedback Card -->
+            <div class="card" data-scroll-index="2">
+                <div class="card-content">
+                    <h2 class="card-title">User Feedback</h2>
+                    <p class="card-description">Collect feedback and provide detailed statistics.</p>
+                    <div class="card-button coming-soon">
+                        <span>Coming Soon</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Claiming Card -->
+            <div class="card" data-scroll-index="3">
+                <div class="card-content">
+                    <h2 class="card-title">Claiming</h2>
+                    <p class="card-description">Support representatives can claim tickets professionally.</p>
+                </div>
+            </div>
+
+            <!-- Support Teams Card -->
+            <div class="card" data-scroll-index="4">
+                <div class="card-content">
+                    <h2 class="card-title">Support Teams</h2>
+                    <p class="card-description">Create separate teams for each ticket type.</p>
+                </div>
+            </div>
+
+            <!-- Transcripts Card -->
+            <div class="card" data-scroll-index="5">
+                <div class="card-content">
+                    <h2 class="card-title">Transcripts</h2>
+                    <p class="card-description">Automatically save and encrypt ticket transcripts.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const hero = document.querySelector('.hero-section');
+        const cards = document.querySelectorAll('.card');
+        
+        hero.classList.add('fade-in-up');
+        
+        cards.forEach((card, index) => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(40px)';
+            
+            setTimeout(() => {
+                card.classList.add('fade-in-up');
+            }, 400 + (index * 200));
+        });
+    });
+    </script>
+</body>
+</html>
