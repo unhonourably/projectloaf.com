@@ -1,4 +1,10 @@
 /* Base Styles */
+        @font-face {
+            font-family: 'OPTISpire';
+            src: url('./fonts/OPTISpire.otf') format('opentype');
+        }
+
+
 :root {
     --primary: #3b51e3;
     --primary-light: #5c6de8;
